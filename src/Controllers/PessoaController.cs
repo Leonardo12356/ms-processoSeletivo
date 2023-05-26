@@ -1,5 +1,6 @@
 using FluentResults;
 using Microsoft.AspNetCore.Mvc;
+using ms_processoSeletivo.Exceptions.Interfaces;
 using ms_processoSeletivo.Interfaces;
 using ms_processoSeletivo.Models.Entities.Dtos.Pessoa;
 
@@ -10,10 +11,12 @@ namespace ms_processoSeletivo.Controllers
     public class PessoaController : ControllerBase
     {
         private readonly IPessoa _interfaces;
+        private readonly IPessoaException _exception;
 
-        public PessoaController(IPessoa interfaces)
+        public PessoaController(IPessoa interfaces, IPessoaException exception)
         {
             _interfaces = interfaces;
+            _exception = exception;
         }
 
         public static IEnumerable<String> messageException(Result resultado)
@@ -24,6 +27,16 @@ namespace ms_processoSeletivo.Controllers
         [HttpPost]
         public IActionResult Adicionar([FromBody] AddPessoaDto dto)
         {
+            Result validacaoCpf = _exception.ValidarCpf(dto.CPF, 0);
+            Result validacaoDataNascimento = _exception.ValidarDtNascimento(dto.DtNascimento);
+
+            if (validacaoCpf.IsFailed || validacaoDataNascimento.IsFailed)
+            {
+                Result combinedResult = Result.Merge(validacaoCpf, validacaoDataNascimento);
+                IEnumerable<string> errorMessages = messageException(combinedResult);
+                return BadRequest(errorMessages);
+            }
+
             var pessoa = _interfaces.Adicionar(dto);
             if (pessoa != null)
             {
@@ -58,6 +71,17 @@ namespace ms_processoSeletivo.Controllers
         [HttpPut("{id}")]
         public IActionResult Atualizar(int id, [FromBody] UpdatePessoaDto dto)
         {
+
+            Result validacaoCpf = _exception.ValidarCpf(dto.CPF, id);
+            Result validacaoDataNascimento = _exception.ValidarDtNascimento(dto.DtNascimento);
+
+            if (validacaoCpf.IsFailed || validacaoDataNascimento.IsFailed)
+            {
+                Result combinedResult = Result.Merge(validacaoCpf, validacaoDataNascimento);
+                IEnumerable<string> errorMessages = messageException(combinedResult);
+                return BadRequest(errorMessages);
+            }
+
             ReadPessoaDto pessoaDto = _interfaces.Editar(id, dto);
             if (pessoaDto != null)
             {

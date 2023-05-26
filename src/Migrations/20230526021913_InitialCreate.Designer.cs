@@ -12,7 +12,7 @@ using ms_processoSeletivo.Data;
 namespace ms_processoSeletivo.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230525164344_InitialCreate")]
+    [Migration("20230526021913_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

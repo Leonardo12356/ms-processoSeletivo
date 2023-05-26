@@ -5,6 +5,10 @@ namespace ms_processoSeletivo.Exceptions.Interfaces
 {
     public interface IPessoaException
     {
-        Result ValidarCpf(Pessoa pessoa);
+        Result ValidarCpf(string cpf, int id);
+
+        Result ValidarDtNascimento(DateTime dtNascimento);
+
+
     }
 }

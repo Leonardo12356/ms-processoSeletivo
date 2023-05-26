@@ -1,5 +1,7 @@
 
 
+using ms_processoSeletivo.Models;
+
 namespace ms_processoSeletivo.Interfaces
 {
     public interface IBaseInt<in T, out A>
@@ -8,5 +10,6 @@ namespace ms_processoSeletivo.Interfaces
         IEnumerable<A> BuscarTodos();
         A BuscarPorId(int id);
         bool Excluir(int id);
+
     }
 }

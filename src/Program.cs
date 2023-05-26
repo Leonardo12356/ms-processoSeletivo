@@ -1,10 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 using ms_processoSeletivo.Data;
 using ms_processoSeletivo.Domain;
+using ms_processoSeletivo.Exceptions;
+using ms_processoSeletivo.Exceptions.Interfaces;
 using ms_processoSeletivo.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<IPessoa, PessoaDomain>();
+builder.Services.AddScoped<IPessoaException, PessoaException>();
 
 
 
