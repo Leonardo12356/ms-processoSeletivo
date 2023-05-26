@@ -71,21 +71,5 @@ namespace ms_processoSeletivo.Domain
             return false;
         }
 
-        public ReadPessoaDto BuscarPorCpf(string cpf)
-        {
-            var pessoa = _context.Pessoas.FirstOrDefault(p => p.CPF == cpf);
-            if (pessoa == null)
-            {
-                return null; // Ou outra ação apropriada para lidar com o caso em que não há pessoa encontrada com o CPF fornecido
-            }
-
-            var readPessoaDto = new ReadPessoaDto
-            {
-                CPF = pessoa.CPF
-
-            };
-
-            return readPessoaDto;
-        }
     }
 }
