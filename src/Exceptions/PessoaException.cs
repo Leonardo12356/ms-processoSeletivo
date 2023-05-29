@@ -80,13 +80,13 @@ namespace ms_processoSeletivo.Exceptions
                 idade--;
             }
 
-            // Verificar se a pessoa é maior de idade
+
             if (idade < 18)
             {
                 return Result.Fail("A pessoa na qual está tentando cadastrar deve ser maior de idade");
             }
 
-            // Data de nascimento válida e pessoa é maior de idade
+
             return Result.Ok();
         }
     }
