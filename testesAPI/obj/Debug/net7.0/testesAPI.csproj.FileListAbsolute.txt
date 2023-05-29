@@ -1,9 +1,4 @@
 C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\bin\Debug\net7.0\CoverletSourceRootsMapping
-C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\obj\Debug\net7.0\testesAPI.csproj.AssemblyReference.cache
-C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\obj\Debug\net7.0\testesAPI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\obj\Debug\net7.0\testesAPI.AssemblyInfoInputs.cache
-C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\obj\Debug\net7.0\testesAPI.AssemblyInfo.cs
-C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\obj\Debug\net7.0\testesAPI.csproj.CoreCompileInputs.cache
 C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\bin\Debug\net7.0\testhost.dll
 C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\bin\Debug\net7.0\ms-processoSeletivo.deps.json
 C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\bin\Debug\net7.0\ms-processoSeletivo.runtimeconfig.json
@@ -38,6 +33,7 @@ C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\te
 C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\bin\Debug\net7.0\Microsoft.TestPlatform.Utilities.dll
 C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\bin\Debug\net7.0\Microsoft.VisualStudio.TestPlatform.Common.dll
 C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\bin\Debug\net7.0\Moq.dll
+C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\bin\Debug\net7.0\Moq.EntityFrameworkCore.dll
 C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\bin\Debug\net7.0\Npgsql.dll
 C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
@@ -116,10 +112,14 @@ C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\te
 C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\bin\Debug\net7.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\bin\Debug\net7.0\ms-processoSeletivo.dll
 C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\bin\Debug\net7.0\ms-processoSeletivo.pdb
+C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\obj\Debug\net7.0\testesAPI.csproj.AssemblyReference.cache
+C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\obj\Debug\net7.0\testesAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\obj\Debug\net7.0\testesAPI.AssemblyInfoInputs.cache
+C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\obj\Debug\net7.0\testesAPI.AssemblyInfo.cs
+C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\obj\Debug\net7.0\testesAPI.csproj.CoreCompileInputs.cache
 C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\obj\Debug\net7.0\testesAPI.csproj.CopyComplete
 C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\obj\Debug\net7.0\testesAPI.dll
 C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\obj\Debug\net7.0\refint\testesAPI.dll
 C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\obj\Debug\net7.0\testesAPI.pdb
 C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\obj\Debug\net7.0\testesAPI.genruntimeconfig.cache
 C:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\obj\Debug\net7.0\ref\testesAPI.dll
-c:\Users\leoaguiar.dsn.pack\Desktop\Processo Seletivo SQA\ms-processoSeletivo\testesAPI\bin\Debug\net7.0\Moq.EntityFrameworkCore.dll

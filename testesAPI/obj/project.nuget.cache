@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TtTru0P6jnOsOYnRctYq3i00nKVpgpf5zBeOBQ4C0qisKrQMDh+cpvIDZ+xN+BXCgp93DwVG18/qysFNBwl5zg==",
+  "dgSpecHash": "0nqYCgeFv+dYXOsaTMxxUeejg6bSWo+rJLaOmR1J6B7R1MJTsEWk4wh0mYakzt/Eto3CKPX/cuv0gRe8+iUtcA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\leoaguiar.dsn.pack\\Desktop\\Processo Seletivo SQA\\ms-processoSeletivo\\testesAPI\\testesAPI.csproj",
+  "projectFilePath": "C:\\Users\\leoaguiar.dsn.pack\\Desktop\\Processo Seletivo SQA\\ms-processoSeletivo\\testesAPI\\testesAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\leoaguiar.dsn.pack\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\leoaguiar.dsn.pack\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

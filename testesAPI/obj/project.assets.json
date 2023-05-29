@@ -6923,11 +6923,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\leoaguiar.dsn.pack\\Desktop\\Processo Seletivo SQA\\ms-processoSeletivo\\testesAPI\\testesAPI.csproj",
+      "projectUniqueName": "C:\\Users\\leoaguiar.dsn.pack\\Desktop\\Processo Seletivo SQA\\ms-processoSeletivo\\testesAPI\\testesAPI.csproj",
       "projectName": "testesAPI",
-      "projectPath": "c:\\Users\\leoaguiar.dsn.pack\\Desktop\\Processo Seletivo SQA\\ms-processoSeletivo\\testesAPI\\testesAPI.csproj",
+      "projectPath": "C:\\Users\\leoaguiar.dsn.pack\\Desktop\\Processo Seletivo SQA\\ms-processoSeletivo\\testesAPI\\testesAPI.csproj",
       "packagesPath": "C:\\Users\\leoaguiar.dsn.pack\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\leoaguiar.dsn.pack\\Desktop\\Processo Seletivo SQA\\ms-processoSeletivo\\testesAPI\\obj\\",
+      "outputPath": "C:\\Users\\leoaguiar.dsn.pack\\Desktop\\Processo Seletivo SQA\\ms-processoSeletivo\\testesAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\leoaguiar.dsn.pack\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -6942,8 +6942,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "c:\\Users\\leoaguiar.dsn.pack\\Desktop\\Processo Seletivo SQA\\ms-processoSeletivo\\src\\ms-processoSeletivo.csproj": {
-              "projectPath": "c:\\Users\\leoaguiar.dsn.pack\\Desktop\\Processo Seletivo SQA\\ms-processoSeletivo\\src\\ms-processoSeletivo.csproj"
+            "C:\\Users\\leoaguiar.dsn.pack\\Desktop\\Processo Seletivo SQA\\ms-processoSeletivo\\src\\ms-processoSeletivo.csproj": {
+              "projectPath": "C:\\Users\\leoaguiar.dsn.pack\\Desktop\\Processo Seletivo SQA\\ms-processoSeletivo\\src\\ms-processoSeletivo.csproj"
             }
           }
         }
