@@ -1,4 +1,5 @@
 using FluentResults;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ms_processoSeletivo.Exceptions.Interfaces;
 using ms_processoSeletivo.Interfaces;
@@ -8,18 +9,21 @@ namespace ms_processoSeletivo.Controllers
 {
     [ApiController]
     [Route("[Controller]")]
+    [Authorize(Roles = "User")]
     public class PessoaController : ControllerBase
     {
         private readonly IPessoa _interfaces;
-        private readonly IPessoaException _exception;
+        private readonly IPessoaExceptions _exception;
+        private readonly IDataNascimentoExceptions _dataNascimentoException;
 
-        public PessoaController(IPessoa interfaces, IPessoaException exception)
+        public PessoaController(IPessoa interfaces, IPessoaExceptions exception, IDataNascimentoExceptions dataNascimentoException)
         {
             _interfaces = interfaces;
             _exception = exception;
+            _dataNascimentoException = dataNascimentoException;
         }
 
-        public static IEnumerable<String> messageException(Result resultado)
+        public static IEnumerable<string> MessageException(Result resultado)
         {
             return resultado.Reasons.Select(reason => reason.Message);
         }
@@ -28,12 +32,12 @@ namespace ms_processoSeletivo.Controllers
         public IActionResult Adicionar([FromBody] AddPessoaDto dto)
         {
             Result validacaoCpf = _exception.ValidarCpf(dto.CPF, 0);
-            Result validacaoDataNascimento = _exception.ValidarDtNascimento(dto.DtNascimento);
+            Result validacaoDataNascimento = _dataNascimentoException.ValidarDtNascimento(dto.DtNascimento);
 
             if (validacaoCpf.IsFailed || validacaoDataNascimento.IsFailed)
             {
                 Result combinedResult = Result.Merge(validacaoCpf, validacaoDataNascimento);
-                IEnumerable<string> errorMessages = messageException(combinedResult);
+                IEnumerable<string> errorMessages = MessageException(combinedResult);
                 return BadRequest(errorMessages);
             }
 
@@ -73,12 +77,12 @@ namespace ms_processoSeletivo.Controllers
         {
 
             Result validacaoCpf = _exception.ValidarCpf(dto.CPF, id);
-            Result validacaoDataNascimento = _exception.ValidarDtNascimento(dto.DtNascimento);
+            Result validacaoDataNascimento = _dataNascimentoException.ValidarDtNascimento(dto.DtNascimento);
 
             if (validacaoCpf.IsFailed || validacaoDataNascimento.IsFailed)
             {
                 Result combinedResult = Result.Merge(validacaoCpf, validacaoDataNascimento);
-                IEnumerable<string> errorMessages = messageException(combinedResult);
+                IEnumerable<string> errorMessages = MessageException(combinedResult);
                 return BadRequest(errorMessages);
             }
 
@@ -95,7 +99,7 @@ namespace ms_processoSeletivo.Controllers
         {
             var pessoa = _interfaces.Excluir(id);
 
-            if (pessoa != true)
+            if (!pessoa)
             {
                 return BadRequest("Falha ao deletar cadastro.");
             }

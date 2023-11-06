@@ -30,11 +30,17 @@ namespace ms_processoSeletivo.Domain
 
         public ReadPessoaDto BuscarPorId(int id)
         {
-            Pessoa pessoa = _context.Pessoas.FirstOrDefault(pessoa => pessoa.Id == id);
-            ReadPessoaDto pessoaDto = _mapper.Map<ReadPessoaDto>(pessoa);
 
-            return pessoaDto;
+            Pessoa? pessoa = _context.Pessoas.FirstOrDefault(p => p.Id == id);
+
+            if (pessoa != null)
+            {
+                ReadPessoaDto pessoaDto = _mapper.Map<ReadPessoaDto>(pessoa);
+                return pessoaDto;
+            }
+            return new ReadPessoaDto();
         }
+
 
         public IEnumerable<ReadPessoaDto> BuscarTodos()
         {
@@ -45,7 +51,7 @@ namespace ms_processoSeletivo.Domain
 
         public ReadPessoaDto Editar(int id, UpdatePessoaDto dto)
         {
-            Pessoa pessoa = _context.Pessoas.FirstOrDefault(pessoa => pessoa.Id == id);
+            Pessoa? pessoa = _context.Pessoas.FirstOrDefault(pessoa => pessoa.Id == id);
             if (pessoa != null)
             {
                 _mapper.Map(dto, pessoa);
@@ -55,12 +61,12 @@ namespace ms_processoSeletivo.Domain
                 return pessoaDto;
             }
 
-            return null;
+            return new ReadPessoaDto();
         }
 
         public bool Excluir(int id)
         {
-            Pessoa pessoa = _context.Pessoas.FirstOrDefault(pessoa => pessoa.Id == id);
+            Pessoa? pessoa = _context.Pessoas.FirstOrDefault(pessoa => pessoa.Id == id);
 
             if (pessoa != null)
             {
